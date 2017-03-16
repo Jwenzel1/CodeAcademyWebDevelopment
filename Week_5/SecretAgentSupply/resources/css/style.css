@@ -55,6 +55,7 @@ header p{
 }
 nav{
   background-color: firebrick;
+  width: 100%;
 }
 
 ul{
@@ -68,6 +69,10 @@ li{
   font-family: Helvetica;
 }
 
+#menuButton{
+  display: none;
+}
+
 .gallery{
   display: flex;
   justify-content: space-between;
@@ -76,7 +81,6 @@ li{
 
 .galleryItem{
   width: 30%;
-
 }
 
 .galleryPic{
@@ -84,7 +88,6 @@ li{
   padding: 2rem 0rem;
   height: 9rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -140,4 +143,77 @@ footer{
 footer div{
   font-family: Helvetica;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .glasses{
+    display: none;
+  }
+
+  .galleryItem{
+    width: 47%;
+  }
+
+  .infoBlock{
+    width: 35%;
+  }
+
+  .siteContainer{
+    width: 100%;
+  }
+
+  li{
+    display: none;
+  }
+
+  #menuButton{
+    display: inline;
+    margin: 0 auto;
+    padding: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  #banner{
+    height: 15rem;
+  }
+
+  #bannerMessage{
+    top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  #bannerMessage p:first-child{
+    font-size: 0.77rem;
+  }
+
+  #bannerMessage p:nth-child(2){
+    font-size: 1rem;
+  }
+
+  .gallery{
+    justify-content: center;
+  }
+  .watch{
+    display: none;
+  }
+
+  .galleryItem{
+    width: 90%;
+  }
+
+  .info{
+    display: block;
+  }
+
+  .infoBlock{
+    width: 90%;
+    margin:0 auto 0.5rem auto;
+  }
+
+  footer{
+    width: 100%;
+    text-align: center;
+  }
 }
