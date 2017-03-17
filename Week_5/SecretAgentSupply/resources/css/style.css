@@ -162,14 +162,16 @@ footer div{
     width: 100%;
   }
 
+  ul{
+    justify-content: space-around;
+  }
+
   li{
     display: none;
   }
 
   #menuButton{
     display: inline;
-    margin: 0 auto;
-    padding: 0.75rem;
   }
 }
 
