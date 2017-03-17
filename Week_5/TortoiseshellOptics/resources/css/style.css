@@ -62,3 +62,64 @@ li{
   font-weight: bold;
   font-size: 2rem;
 }
+
+.gallery{
+  display: flex;
+  justify-content: center;
+}
+
+.galleryItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+  text-align: center;
+}
+
+.galleryItem img{
+  width: 5rem;
+}
+
+.galleryItem .paper{
+  width: 3.5rem;
+}
+
+.informationSection{
+  display: flex;
+  padding-left: 5%;
+}
+
+.infoBlock{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: 0rem 0 4rem 5%;
+}
+
+.infoTitle{
+  width: 10rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1.25rem;
+}
+
+.info{
+  padding-top: 1rem;
+  line-height: normal;
+}
+
+#footer{
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+#footer img{
+  margin: 4rem 1rem 4rem 3rem;
+  height: 1.5rem;
+}
