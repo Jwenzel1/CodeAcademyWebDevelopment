@@ -35,11 +35,11 @@ header img{
 header p{
   font-size: 1rem;
   color: white;
-  margin: 1rem 0rem;
+  /*margin: 1rem 0rem;*/
 }
 
 nav{
-  margin-left: auto;
+  margin: 1rem 0rem 1rem auto;
 }
 
 li{
@@ -48,19 +48,21 @@ li{
   margin-right: 2rem;
 }
 
+.littleMenu{
+  display: none;
+}
+
 #bannerMessage{
   display: inline-block;
   position: relative;
   top: 10rem;
   left: 2rem;
   float: right;
-}
-
-#bannerMessage p{
-  padding: 1.5rem 5rem;
   background-color: white;
+  padding: 1.5rem 5rem;
   font-weight: bold;
   font-size: 2rem;
+  line-height: normal;
 }
 
 .gallery{
@@ -89,14 +91,16 @@ li{
 
 .informationSection{
   display: flex;
-  padding-left: 5%;
+  margin-bottom: 4rem;
 }
 
 .infoBlock{
+  position: relative;
+  left: 10%;
   display: flex;
   flex-direction: column;
   width: 35%;
-  margin: 0rem 0 4rem 5%;
+  margin-right: 5%;
 }
 
 .infoTitle{
@@ -122,4 +126,115 @@ li{
 #footer img{
   margin: 4rem 1rem 4rem 3rem;
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .siteContainer{
+    width: 100%;
+    margin; 0;
+  }
+
+  header{
+    position: fixed;
+    z-index: 5;
+  }
+
+  #topBanner{
+    height: 22rem;
+  }
+
+  #topBanner > div{
+    top: 4rem;
+  }
+
+  #bannerMessage{
+    top: 5rem;
+    left: 0rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  .informationSection{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .menu{
+    display: none;
+  }
+
+  .littleMenu{
+    display: block;
+  }
+
+  header p{
+    display: none;
+  }
+
+  #topBanner{
+    height: 17rem;
+  }
+
+  #bannerMessage{
+    display: block;
+    text-align: center;
+    margin: 0;
+    top: 9rem;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  #topBanner{
+    background-position: 20%;
+  }
+
+  .gallery{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+
+  .galleryItem{
+    margin: 0;
+    margin-top: 1.54;
+    justify-content: space-around;
+  }
+
+  .galleryItem p{
+    font-size: 0.77rem;
+  }
+
+  .informationSection{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .infoBlock{
+    width: 100%;
+    position: static;
+    margin: 0;
+  }
+
+  .infoTitle{
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .info{
+    margin-bottom: 4rem;
+  }
+
+  #footer p{
+    display: none;
+  }
+
+  #footer{
+    justify-content: center;
+  }
 }
