@@ -129,6 +129,11 @@ li{
 }
 
 @media only screen and (max-width: 1024px) {
+  #topBanner > div{
+    position: static;
+    
+  }
+
   .siteContainer{
     width: 100%;
     margin; 0;
