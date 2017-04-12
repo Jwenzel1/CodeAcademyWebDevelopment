@@ -51,7 +51,8 @@ h3, h4, h5, h6{
   padding: 1rem 1.5rem 0rem 0rem;
 }
 
-.mediaContainer img{
+.mediaContainer img,
+.mediaContainer video{
   width:100%;
 }
 
@@ -115,7 +116,7 @@ h3, h4, h5, h6{
   padding: 2rem 3.5rem;
 }
 
-#courseInfo h2{
+.title{
   font-weight: bold;
   font-size: 2rem;
   padding-bottom: 1rem;
@@ -149,4 +150,20 @@ h3, h4, h5, h6{
 .class div h6,
 .class div p{
   padding: .5rem 0rem;
+}
+
+#thesis{
+  padding-top: 2rem;
+}
+
+#thesisContent{
+  justify-content: flex-start;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgb(200,200,200);
+  color: rgb(200, 200, 200)
 }
