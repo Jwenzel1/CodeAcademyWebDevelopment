@@ -1,0 +1,1 @@
+Week 6 had no projects it was just about how to change color and make design choices? I didnt understand why that was an entire week.

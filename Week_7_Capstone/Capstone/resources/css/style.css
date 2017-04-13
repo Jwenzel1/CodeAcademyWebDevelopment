@@ -22,7 +22,11 @@ h3, h4, h5, h6{
   font-weight: bold;
 }
 
-#desktopHeader{
+.mobileHeader{
+  display: none;
+}
+
+.header{
   display: flex;
   align-items: center;
   padding: 1rem 1.5rem;
@@ -54,6 +58,10 @@ h3, h4, h5, h6{
 .mediaContainer img,
 .mediaContainer video{
   width:100%;
+}
+
+.mobileImage{
+  display: none;
 }
 
 .supportingContent{
@@ -128,6 +136,10 @@ h3, h4, h5, h6{
   justify-content: space-between;
 }
 
+.mobileClassContainer{
+  display: none;
+}
+
 .class{
   width: 31%;
   padding: 1rem;
@@ -166,4 +178,118 @@ footer{
   padding: 1rem 1.5rem;
   border-top: 1px solid rgb(200,200,200);
   color: rgb(200, 200, 200)
+}
+
+@media only screen and (max-width: 770px){
+  .desktopHeader{
+    display: none;
+  }
+
+  #logo{
+    display: none;
+  }
+
+  .mobileHeader{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mobileHeader nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .content{
+    padding: 0rem;
+    flex-direction: column;
+  }
+
+  .mediaContainer{
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .supportingContent{
+    width: 100%;
+    padding: 2rem 0rem;
+  }
+
+  .supportingContent h3,
+  .supportingContent p{
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  #bannerInfo a{
+    width: 90%;
+    margin:auto;
+  }
+
+  #info .mediaContainer{
+    display: none;
+  }
+
+  .supportingContent{
+    padding: 1rem 0rem 2rem 0rem;
+  }
+
+  .infoBlock{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .infoBlock img{
+    width: 100%;
+    margin: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .desktopImage{
+    display:none;
+  }
+
+  .mobileImage{
+    display:inline-block;
+  }
+
+  #courseInfo{
+    padding: 2rem 1rem;
+  }
+
+  .classContainer{
+    display: none;
+  }
+
+  .mobileClassContainer{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mobileClassContainer div{
+    padding: 1rem;
+    margin: .5rem 0rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(220,220,220);
+    width: auto;
+  }
+
+  #thesis .mediaContainer h4,
+  #thesis .mediaContainer p,
+  #thesis .supportingContent{
+    display: none;
+  }
+
+  #thesis .mediaContainer video{
+    margin-bottom: 1.5rem;
+  }
+
+  footer{
+    border-top: none;
+    color: black;
+  }
+
+  footer ul{
+    display: none;
+  }
 }
